@@ -1,0 +1,136 @@
+/* Palette:
+
+tints:
+https://coolors.co/594ae3-7568e8-9086ec-aca5f1-c8c3f6-e3e1fa-ffffff
+
+shades:
+https://coolors.co/594ae3-4a3ebd-3b3197-2d2572-1e194c-0f0c26-000000
+*/
+
+/* -------------
+// GENERAL
+---------------- */
+
+:root {
+  font-size: 62.5%;
+
+  /* TYPOGRAPHY */
+  --ff-raleway: "Raleway", sans-serif;
+
+  --fs-normal: 1.6rem;
+  --fs-medium: 2.4rem;
+  --fs-big: 3.6rem;
+  --fs-huge: 6.4rem;
+
+  --fw-normal: 400;
+  --fw-bold: 600;
+  --fw-bolder: 700;
+
+  /* COLOR */
+  --clr-main: #594ae3;
+
+  --clr-main-tint01: #7568e8;
+  --clr-main-tint02: #9086ec;
+  --clr-main-tint03: #aca5f1;
+  --clr-main-tint04: #c8c3f6;
+  --clr-main-tint05: #e3e1fa;
+
+  --clr-main-shade01: #4a3ebd;
+  --clr-main-shade02: #3b3197;
+  --clr-main-shade03: #2d2572;
+  --clr-main-shade04: #1e194c;
+  --clr-main-shade05: #0f0c26;
+
+  --clr-gray: #212529;
+
+  --clr-white: #fff;
+  --clr-black: #000;
+
+  /* WHITE SPACE */
+
+  /* BORDER RADIUS */
+
+  /* SHADOWS */
+}
+
+body {
+  font-family: var(--ff-raleway);
+  font-size: var(--fs-normal);
+  background-color: var(--clr-white);
+  color: var(--clr-gray);
+}
+
+header {
+  border: dashed 2px red;
+}
+
+/* -------------
+// TYPOGRAPHY
+---------------- */
+
+h1,
+h2 {
+  font-weight: var(--fw-bold);
+}
+
+h1 {
+  font-size: var(--fs-huge);
+}
+
+h2 {
+  font-size: var(--fs-big);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-weight: var(--fw-bolder);
+}
+
+/* -------------
+// LAYOUT
+---------------- */
+header,
+.header-top,
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+section {
+  max-width: 120rem;
+  margin: 0 auto;
+  border: dashed lime 2px;
+}
+
+footer {
+  border: dashed purple 2px;
+}
+
+/* -------------
+// HEADER
+---------------- */
+
+.logo {
+  width: 20rem;
+  object-fit: contain;
+  padding: 1em;
+}
+
+/* -------------
+// HELPERS
+---------------- */
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+}
