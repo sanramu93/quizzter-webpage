@@ -60,10 +60,6 @@ body {
   color: var(--clr-gray);
 }
 
-header {
-  border: dashed 2px red;
-}
-
 /* -------------
 // TYPOGRAPHY
 ---------------- */
@@ -97,30 +93,45 @@ button {
 // LAYOUT
 ---------------- */
 header,
-.header-top,
+.header-main,
+.header-left,
 nav ul {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 section {
   max-width: 120rem;
   margin: 0 auto;
-  border: dashed lime 2px;
 }
 
 footer {
-  border: dashed purple 2px;
 }
 
 /* -------------
 // HEADER
 ---------------- */
 
+.header-main {
+  justify-content: space-between;
+  width: 95%;
+  max-width: 180rem;
+  border: dashed lime 2px;
+}
+
 .logo {
   width: 20rem;
   object-fit: contain;
   padding: 1em;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  padding-right: 2em;
 }
 
 /* -------------
