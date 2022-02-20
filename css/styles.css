@@ -15,9 +15,9 @@ https://coolors.co/594ae3-4a3ebd-3b3197-2d2572-1e194c-0f0c26-000000
   font-size: 62.5%;
 
   /* TYPOGRAPHY */
-  --ff-raleway: "Raleway", sans-serif;
+  --ff-nunito: "Nunito", sans-serif;
 
-  --fs-normal: 1.6rem;
+  --fs-normal: 1.8rem;
   --fs-medium: 2.4rem;
   --fs-big: 3.6rem;
   --fs-huge: 6.4rem;
@@ -54,7 +54,7 @@ https://coolors.co/594ae3-4a3ebd-3b3197-2d2572-1e194c-0f0c26-000000
 }
 
 body {
-  font-family: var(--ff-raleway);
+  font-family: var(--ff-nunito);
   font-size: var(--fs-normal);
   background-color: var(--clr-white);
   color: var(--clr-gray);
@@ -71,10 +71,28 @@ h2 {
 
 h1 {
   font-size: var(--fs-huge);
+  line-height: 100%;
 }
 
 h2 {
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-normal);
+}
+
+.section-title {
   font-size: var(--fs-big);
+  font-weight: var(--fw-normal);
+  text-align: center;
+}
+
+.section-text-small {
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-normal);
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: var(--fs-normal);
 }
 
 li {
@@ -92,6 +110,11 @@ button {
 /* -------------
 // LAYOUT
 ---------------- */
+.page-container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
 header,
 .header-main,
 .header-left,
@@ -101,9 +124,9 @@ nav ul {
   justify-content: center;
 }
 
-section {
-  max-width: 120rem;
-  margin: 0 auto;
+section,
+footer {
+  margin: 9.6rem 0;
 }
 
 footer {
@@ -114,10 +137,8 @@ footer {
 ---------------- */
 
 .header-main {
+  width: 100%;
   justify-content: space-between;
-  width: 95%;
-  max-width: 180rem;
-  border: dashed lime 2px;
 }
 
 .logo {
@@ -132,6 +153,97 @@ nav ul {
 
 nav ul li {
   padding-right: 2em;
+}
+
+/* -------------
+// HERO
+---------------- */
+
+.hero-content {
+  display: flex;
+}
+
+.hero-left-content,
+.hero-right-content {
+  width: 50%;
+  /* max-width: 48rem; */
+}
+
+.hero-title {
+  margin-bottom: 0.1em;
+}
+
+.hero-description {
+  margin-bottom: 1em;
+}
+
+.hero-cta-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.hero-cta-wrapper button {
+  width: 50%;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.hero-bottom-content {
+  display: flex;
+  align-items: center;
+}
+
+.hero-bottom-content .icon {
+  font-size: 3.8rem;
+  color: var(--clr-main);
+  padding: 0.3em;
+}
+
+.hero-image-wrapper {
+  height: 100%;
+}
+
+/* -------------
+// TESTIMONIALS
+---------------- */
+
+.user-img {
+  width: 9rem;
+}
+
+.user-img img {
+  border-radius: 50%;
+}
+
+.testimonial-carousel {
+  position: relative;
+  border: dashed red 1px;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  margin: 4.8em auto;
+  width: 80%;
+  max-width: 80rem;
+}
+
+.user-img-container {
+  border: dashed lime 1px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  display: flex;
+  justify-content: center;
+}
+
+.user-img-container img {
+  padding: 0.5em;
+}
+
+.company-logos-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-wrapper {
+  width: 18rem;
 }
 
 /* -------------
