@@ -1,0 +1,90 @@
+ <section id="product-overview">
+          <h2 class="section-title">
+            Everything you need for mastery and engagement
+          </h2>
+          <div class="section-text-small">
+            Introduce concepts, check for understanding, get instant insights,
+            and more.
+          </div>
+          <div class="product-details-slider-wrapper">
+            <div class="product-details-slider">
+              <div class="slider-header" role="tablist">
+                <button
+                  class="slider-header-tab"
+                  data-slide-num="1"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  <div class="tab-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                  </div>
+                  <div class="tab-name">Live Engagement</div></button
+                ><button
+                  class="slider-header-tab tab-highlight"
+                  data-slide-num="2"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  <div class="tab-icon"><i class="fas fa-clock"></i></div>
+                  <div class="tab-name">Asynchronous Learning</div></button
+                ><button
+                  class="slider-header-tab"
+                  data-slide-num="3"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  <div class="tab-icon"><i class="fas fa-chart-bar"></i></div>
+                  <div class="tab-name">Insights and Reporting</div>
+                </button>
+                <div class="tab-selection select-2">
+                  <div
+                    class="tab-selection-fill"
+                    style="width: 77.7875%; overflow: hidden"
+                  ></div>
+                </div>
+              </div>
+              <div class="slider-content" style="display: flex">
+                <div class="content-left">
+                  <h3
+                    class="slide-title"
+                    kr-html-filter="true"
+                    kr-html="Learn anytime and anywhere"
+                  >
+                    Learn anytime and anywhere
+                  </h3>
+                  <div class="slide-details">
+                    <ul class="details-list">
+                      <li>
+                        Set a deadline so your students can learn on their own
+                        time or create an evergreen link.
+                      </li>
+                      <li>
+                        Share via messaging tools, email, or your LMS.
+                        Participants join from any device.
+                      </li>
+                      <li>
+                        Retakes, flashcards and other tools enable independent
+                        study and promote mastery.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="slide-cta">
+                    <a
+                      href="/signup?source=landing_sld_async"
+                      aria-label="Try Quizizz out"
+                      >Try it out<i class="far fa-angle-right"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="content-right">
+                  <img
+                    src="https://cf.quizizz.com/img/mkt/4-PRODUCT_OVERVIEW-2.jpg"
+                    aria-hidden="true"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
