@@ -364,6 +364,21 @@ nav ul li {
   opacity: 0;
 }
 
+.testimonial-text {
+  position: relative;
+  height: 10rem;
+}
+
+.testimonial-text p {
+  position: absolute;
+  opacity: 0;
+  transition: 0.4s opacity ease-out;
+}
+
+.testimonial-text-p--active {
+  opacity: 1 !important;
+}
+
 .company-logos-container {
   display: flex;
   justify-content: center;
@@ -418,7 +433,6 @@ nav ul li {
 }
 
 .learn-more-card {
-  border: solid 1px red;
 }
 
 .lm-card-img {
@@ -434,7 +448,6 @@ nav ul li {
 }
 
 .step-item {
-  border: solid 1px red;
 }
 
 /* ---------------
