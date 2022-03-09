@@ -1,4 +1,5 @@
 const userImgs = document.querySelectorAll(".user-img");
+const userInfos = document.querySelectorAll(".user-info");
 const testimonials = document.querySelectorAll(".testimonial-text-p");
 
 userImgs.forEach((img) => {
@@ -9,14 +10,20 @@ userImgs.forEach((img) => {
     testimonials.forEach((testimonial) => {
       testimonial.classList.remove("testimonial-text-p--active");
     });
+    userInfos.forEach((info) => {
+      info.classList.remove("user-info--active");
+    });
 
     e.target.classList.add("user-img--active");
 
-    const testimonialAtt = img.dataset.testimonial;
+    const userAtt = img.dataset.user;
 
     const testimonial = document.querySelector(
-      `[data-testimonial='${testimonialAtt}']`
+      `[data-testimonial='${userAtt}']`
     );
+    const userInfo = document.querySelector(`[data-user-info=${userAtt}]`);
+
     testimonial.classList.add("testimonial-text-p--active");
+    userInfo.classList.add("user-info--active");
   });
 });

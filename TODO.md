@@ -1,3 +1,3 @@
 # TODO
 
-- Finish markup;
+- End testimonial section

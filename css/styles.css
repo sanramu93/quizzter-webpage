@@ -19,6 +19,7 @@ https://coolors.co/594ae3-4a3ebd-3b3197-2d2572-1e194c-0f0c26-000000
 
   --fs-h1: 6.4rem;
   --fs-h2: 3.6rem;
+  --fs-small: 1.3rem;
   --fs-desc: 1.8rem;
   --fs-test: 2.4rem;
   --fs-body: 1.6rem;
@@ -204,12 +205,12 @@ nav ul {
 section,
 footer {
   /* border: dashed red 1px; */
-  padding: 7.2rem;
-  margin: 7.2rem 0;
+  padding: 0 7.2rem;
+  margin: 12.8rem 0;
 }
 
 #page-hero {
-  margin-top: 4.8rem;
+  margin-top: 12.8rem;
 }
 
 /* -------------
@@ -316,6 +317,7 @@ nav ul li {
   padding: 4.8rem 4.8rem 9.6rem 4.8rem;
   margin: 4.8em auto;
   max-width: 85rem;
+  margin-bottom: 10em;
 }
 
 .user-img-container {
@@ -364,6 +366,34 @@ nav ul li {
   opacity: 0;
 }
 
+.user-info {
+  position: absolute;
+  left: 75%;
+  top: 70%;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.4s all ease-out;
+}
+
+.user-info--active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.user-name,
+.user-job {
+  line-height: 1em;
+}
+
+.user-name {
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary);
+}
+
+.user-job {
+  font-size: var(--fs-small);
+}
+
 .testimonial-text {
   position: relative;
   height: 10rem;
@@ -372,11 +402,13 @@ nav ul li {
 .testimonial-text p {
   position: absolute;
   opacity: 0;
-  transition: 0.4s opacity ease-out;
+  transform: scale(0);
+  transition: 0.4s all ease-out;
 }
 
 .testimonial-text-p--active {
   opacity: 1 !important;
+  transform: scale(1) !important;
 }
 
 .company-logos-container {
@@ -394,6 +426,7 @@ nav ul li {
 
 .product-try-cta {
   display: block;
+  font-size: 2.4rem;
   margin: 0 auto;
 }
 
