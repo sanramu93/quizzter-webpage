@@ -245,22 +245,22 @@
             <div class="product-details-slider">
               <div class="slider-header" role="tablist">
                 <button
-                  class="slider-header-tab"
+                  class="slider-header-tab slider-header-tab--active"
                   data-slide-num="1"
                   role="tab"
                   aria-selected="false"
                 >
                   <div class="tab-icon">
-                    <i class="fas fa-chalkboard-teacher"></i>
+                    <i class="bi bi-heart-fill"></i>
                   </div>
                   <div class="tab-name">Live Engagement</div></button
                 ><button
-                  class="slider-header-tab tab-highlight"
+                  class="slider-header-tab"
                   data-slide-num="2"
                   role="tab"
                   aria-selected="true"
                 >
-                  <div class="tab-icon"><i class="fas fa-clock"></i></div>
+                  <div class="tab-icon"><i class="bi bi-clock-fill"></i></div>
                   <div class="tab-name">Asynchronous Learning</div></button
                 ><button
                   class="slider-header-tab"
@@ -268,7 +268,9 @@
                   role="tab"
                   aria-selected="false"
                 >
-                  <div class="tab-icon"><i class="fas fa-chart-bar"></i></div>
+                  <div class="tab-icon">
+                    <i class="bi bi-bar-chart-line-fill"></i>
+                  </div>
                   <div class="tab-name">Insights and Reporting</div>
                 </button>
                 <div class="tab-selection select-2">
@@ -278,8 +280,46 @@
                   ></div>
                 </div>
               </div>
-              <div class="slider-content" style="display: flex">
-                <div class="content-left">
+              <div class="slider-content">
+                <!-- Slider 01 -->
+                <div class="slider-content-left slider-content-left--active">
+                  <h3
+                    class="slide-title"
+                    kr-html-filter="true"
+                    kr-html="Learn anytime and anywhere"
+                  >
+                    Gamified quizzes, polls, and lessons
+                  </h3>
+                  <div class="slide-details">
+                    <ul class="details-list">
+                      <li>
+                        Choose between presenter-led and self-paced live
+                        learning experiences.
+                      </li>
+                      <li>
+                        Use friendly competition, replays, powerups, and more to
+                        keep every student engaged in mastery.
+                      </li>
+                      <li>
+                        Remote friendly—no need for participants to juggle tabs.
+                        They see questions on their own device.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="slide-cta">
+                    <button
+                      class="btn-accent"
+                      href="#!"
+                      aria-label="Try Quizizz out"
+                    >
+                      Try it out<i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- End of Slider 01 -->
+
+                <!-- Slider 02 -->
+                <div class="slider-content-left">
                   <h3
                     class="slide-title"
                     kr-html-filter="true"
@@ -303,7 +343,6 @@
                       </li>
                     </ul>
                   </div>
-
                   <div class="slide-cta">
                     <button
                       class="btn-accent"
@@ -314,9 +353,54 @@
                     </button>
                   </div>
                 </div>
-                <div class="content-right">
+                <!-- End of Slider 02 -->
+
+                <!-- Slider 03 -->
+                <div class="slider-content-left">
+                  <h3
+                    class="slide-title"
+                    kr-html-filter="true"
+                    kr-html="Learn anytime and anywhere"
+                  >
+                    Instantly know what’s working and what isn’t
+                  </h3>
+                  <div class="slide-details">
+                    <ul class="details-list">
+                      <li>
+                        Instantly identify problem areas by participant, class,
+                        question, and more.
+                      </li>
+                      <li>
+                        All reports are saved and can be accessed at any time.
+                      </li>
+                      <li>Share and export results.</li>
+                    </ul>
+                  </div>
+                  <div class="slide-cta">
+                    <button
+                      class="btn-accent"
+                      href="#!"
+                      aria-label="Try Quizizz out"
+                    >
+                      Try it out<i class="far fa-angle-right"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- End of Slider 03 -->
+                <div class="product-overview-img">
                   <img
+                    class="product-overview-img--active"
                     src="./assets/illustrations/product-overview-01.png"
+                    aria-hidden="true"
+                    alt="Engagement"
+                  />
+                  <img
+                    src="./assets/illustrations/product-overview-02.png"
+                    aria-hidden="true"
+                    alt="Engagement"
+                  />
+                  <img
+                    src="./assets/illustrations/product-overview-03.png"
                     aria-hidden="true"
                     alt="Engagement"
                   />

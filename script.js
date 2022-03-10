@@ -1,3 +1,5 @@
+// TESTIMONIALS
+
 const userImgs = document.querySelectorAll(".user-img");
 const userInfos = document.querySelectorAll(".user-info");
 const testimonials = document.querySelectorAll(".testimonial-text-p");
@@ -25,5 +27,21 @@ userImgs.forEach((img) => {
 
     testimonial.classList.add("testimonial-text-p--active");
     userInfo.classList.add("user-info--active");
+  });
+});
+
+// PRODUCT OVERVIEW
+
+const headerTabs = document.querySelectorAll(".slider-header-tab");
+
+headerTabs.forEach((tab) => {
+  tab.addEventListener("click", (e) => {
+    headerTabs.forEach((tab) => {
+      tab.classList.remove("slider-header-tab--active");
+    });
+
+    e.target
+      .closest(".slider-header-tab")
+      .classList.add("slider-header-tab--active");
   });
 });

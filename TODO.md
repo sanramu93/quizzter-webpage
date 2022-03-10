@@ -1,3 +1,3 @@
 # TODO
 
-- End testimonial section
+- End product overview slider

@@ -19,6 +19,7 @@ https://coolors.co/594ae3-4a3ebd-3b3197-2d2572-1e194c-0f0c26-000000
 
   --fs-h1: 6.4rem;
   --fs-h2: 3.6rem;
+  --fs-big: 2.4rem;
   --fs-small: 1.3rem;
   --fs-desc: 1.8rem;
   --fs-test: 2.4rem;
@@ -77,6 +78,10 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+
+i {
+  color: var(--clr-primary-shade02);
 }
 
 button,
@@ -187,6 +192,7 @@ h2 {
 /* -------------
 // LAYOUT
 ---------------- */
+
 .home-page-container,
 .header-main {
   max-width: 120rem;
@@ -424,37 +430,96 @@ nav ul li {
 // PRODUCT DEMO
 ---------------- */
 
+#product-demo {
+  background-color: var(--clr-primary-tint05);
+  border-radius: var(--br-normal);
+  padding: 4em;
+}
+
 .product-try-cta {
   display: block;
   font-size: 2.4rem;
-  margin: 0 auto;
+  margin: 2em auto;
 }
 
 .product-demo-img-wrapper {
   width: 80rem;
-  margin: 0 auto;
+  border-radius: var(--br-normal);
+  overflow: hidden;
+  margin: 2em auto;
 }
 
 /* -----------------
 // PRODUCT OVERVIEW
 --------------------*/
-.content-left {
+
+.slider-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+.slider-header-tab {
+  border-radius: 0;
+  width: 33.3%;
+  padding-bottom: 1em;
+  border-bottom: solid 2px var(--clr-primary-trans);
+  transition: all 0.4s ease-out;
+}
+
+.slider-header-tab:hover {
+  background-color: var(--clr-white);
+}
+
+.slider-header-tab--active {
+  color: var(--clr-primary);
+  border-color: var(--clr-primary);
+}
+
+.slider-content {
+  display: flex;
+  position: relative;
+}
+
+.slider-content-left {
+  visibility: hidden;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.slider-header {
-  display: flex;
-  justify-content: center;
+.slider-content-left--active {
+  visibility: visible;
+}
+
+.slide-title {
+  color: var(--clr-primary);
+  font-size: var(--fs-big);
 }
 
 .details-list {
   padding-inline-start: 1em;
+  margin-bottom: 2em;
 }
 
 .details-list li {
-  list-style: square;
+  list-style: circle;
+  margin-bottom: 1em;
+}
+
+.product-overview-img {
+  position: relative;
+  width: 60%;
+}
+
+.product-overview-img img {
+  position: absolute;
+  visibility: hidden;
+}
+
+.product-overview-img--active {
+  visibility: visible !important;
 }
 
 /* ------------
