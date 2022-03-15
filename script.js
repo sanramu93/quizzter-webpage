@@ -33,6 +33,8 @@ userImgs.forEach((img) => {
 // PRODUCT OVERVIEW
 
 const headerTabs = document.querySelectorAll(".slider-header-tab");
+const overviewImages = document.querySelectorAll(".product-overview-img");
+const overviewContent = document.querySelectorAll(".slider-content-left");
 
 headerTabs.forEach((tab) => {
   tab.addEventListener("click", (e) => {
@@ -40,8 +42,19 @@ headerTabs.forEach((tab) => {
       tab.classList.remove("slider-header-tab--active");
     });
 
-    e.target
-      .closest(".slider-header-tab")
-      .classList.add("slider-header-tab--active");
+    overviewImages.forEach((tab) => {
+      tab.classList.remove("product-overview-img--active");
+    });
+
+    overviewContent.forEach((tab) => {
+      tab.classList.remove("slider-content-left--active");
+    });
+
+    const tab = e.target.closest(".slider-header-tab");
+    const slideNum = tab.getAttribute("data-slide-num");
+
+    headerTabs[slideNum].classList.add("slider-header-tab--active");
+    overviewImages[slideNum].classList.add("product-overview-img--active");
+    overviewContent[slideNum].classList.add("slider-content-left--active");
   });
 });
